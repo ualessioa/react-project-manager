@@ -8,8 +8,8 @@ export default function({onAddTask}){
     }
 
     function handleClick(){
-        if (!enteredTask.trim() === ""){
-             onAddTask(enteredTask)
+        if (enteredTask.trim() !== ""){
+            onAddTask(enteredTask)
             setEnteredTask("")
         }
     }
